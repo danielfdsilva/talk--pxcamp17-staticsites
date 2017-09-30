@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Harness the power of static websites</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/oam.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background-image="assets/hero_moon.jpg" data-background-color="#EEEEEE" data-state="no-author">
+          <div style="background-color: rgba(31, 59, 69, 0.9); color: #fff; padding: 20px;">
+            <!-- <h1 style="color: #FFF">Static sites</h1>
+            <h4 style="color: #FFF">and a set of tools to make life easier</h4> -->
+            <h4 style="color: #FFF">harness the power of</h4>
+            <h1 style="color: #FFF">Static Websites</h1>
+            <hr style="margin: 64px 0 32px 0" />
+            <p style="font-weight: 700; margin-bottom: 0;">Daniel da Silva</p>
+            <p style="font-size: 24px; margin: 0 0 32px 0;"><img src="assets/devseed.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 8px 0 0; vertical-align: sub;"> Development Seed</p>
+            <div style="font-size: 26px">
+              <p style="opacity: 0.6"><img src="assets/github.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> http://github.com/danielfdsilva</p>
+              <p style="opacity: 0.6"><img src="assets/twitter.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> @danielfdsilva</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h2>The tools</h2>
+            <ul>
+              <li class="fragment"><a href="http://www.metalsmith.io/">Metalsmith</a> - our generator</li>
+              <li class="fragment"><a href="https://github.com/">Github</a> and <a href="https://pages.github.com/">Github Pages</a> - for hosting</li>
+              <li class="fragment"><a href="http://prose.io/">Prose</a> - the content manager</li>
+              <li class="fragment"><a href="https://circleci.com/">Circle CI</a> - continuous integration service</li>
+            </ul>
+
+            <aside class="notes" data-markdown>
+            </aside> 
+          </section>
+
+          <section>
+            <h2>Metalsmith</h2>
+            <ul>
+              <li class="fragment">An extremely simple, pluggable static site generator.</li>
+              <li class="fragment">Makes no broad assumptions. All logic is handled by plugins.</li>
+              <li class="fragment"><em>Since everything is a plugin, the core library is actually just an abstraction for manipulating a directory of files.</em></li>
+            </ul>
+
+            <aside class="notes" data-markdown>
+            </aside> 
+          </section>
+
+          <section>
+            <h2>Github and Github Pages</h2>
+            <ul>
+              <li class="fragment">Free version control allowing collaboration</li>
+              <li class="fragment">Good hooks and integrations with other services</li>
+              <li class="fragment">Free static hosting for OS projects</li>
+            </ul>
+
+            <aside class="notes" data-markdown>
+            </aside> 
+          </section>
+
+          <section>
+            <h2>Prose.io</h2>
+            <ul>
+              <li class="fragment">Simple online file editor, specialized in markdown files</li>
+              <li class="fragment">Powered by github</li>
+            </ul>
+
+            <aside class="notes" data-markdown>
+            </aside> 
+          </section>
+
+          <section>
+            <h2>Circle CI</h2>
+            <ul>
+              <li class="fragment">Continuous integration service</li>
+              <li class="fragment">Free for OS projects</li>
+            </ul>
+
+            <aside class="notes" data-markdown>
+            </aside> 
+          </section>
+        </section>
+
+        <section data-background="assets/sweat.gif" data-background-color="#000000" data-state="no-author">
+          <div style="background-color: rgba(31, 59, 69, 0.9); color: #fff; padding: 20px;">
+            <h2>Live coding time!</h2>
+          </div>
+
+          <aside class="notes" data-markdown>
+          </aside>
+        </section>
+
+        <section data-background="https://media.giphy.com/media/3o7TKqfDfA7fXQL7SE/giphy.gif" data-background-color="#000000" data-state="no-author">
+          <div style="background-color: rgba(31, 59, 69, 0.9); color: #fff; padding: 20px;">
+            <h1>Thank you!</h1>
+            <h3>Questions?</h3>
+            <hr style="margin: 64px 0" />
+            <p style="opacity: 0.8"><img src="assets/github.svg" style="width: 32px; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> http://github.com/danielfdsilva</p>
+            <p style="opacity: 0.8"><img src="assets/twitter.svg" style="width: 32px; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> @danielfdsilva</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+
+    <style type="text/css">
+      .no-author #header-center {
+        display: none;
+      }
+      #header-center {
+        position: absolute;
+        z-index: 9999;
+        bottom: 16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0.64;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      #header-center img {
+        width: 1em;
+        border: none;
+        box-shadow: none;
+        background: none;
+        margin: 0 4px 0 0;
+        vertical-align: top;
+      }
+    </style>
+
+    <!-- 2. Create hidden header/footer <div> -->
+    <div id="hidden" style="display:none;">
+      <div id="header">
+        <div id="header-center">
+            <img src="assets/twitter-dark.svg"> @danielfdsilva
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.js" integrity="sha256-L6ppAjL6jgtRmfiuigeEE5AwNI2pH/X9IBbPyanJeZw=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var header = $('#header').html();
+      if ( window.location.search.match( /print-pdf/gi ) ) {
+          Reveal.addEventListener( 'ready', function( event ) {
+              $('.slide-background').append(header);
+          });
+      }
+      else {
+          $('div.reveal').append(header);
+     }
+    </script>
+  </body>
+</html>
